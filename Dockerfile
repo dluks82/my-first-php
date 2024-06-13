@@ -9,3 +9,6 @@ COPY . /var/www/html/
 
 # Configure as permissões apropriadas
 RUN chown -R www-data:www-data /var/www/html
+
+# Exponha a porta 3000
+EXPOSE 3000
