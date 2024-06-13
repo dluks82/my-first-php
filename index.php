@@ -20,7 +20,7 @@ if (!$result) {
 }
 
 while ($row = pg_fetch_assoc($result)) {
-  echo "id: " . $row["id"] . " - Name: " . $row["name"] . "<br>";
+  echo "Name: " . $row["name"] . " - Age: " . $row["age"] . "<br>";
 }
 
 pg_close($conn);
